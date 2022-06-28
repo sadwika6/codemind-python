@@ -1,3 +1,5 @@
 p,r,t=map(int,input().split())
-ci=p*(pow((1+r/100),t))
-print('%.2f'%ci)
+a=(1+(r/100))
+b=a**t
+c=p*b
+print('%.2f'%c)
