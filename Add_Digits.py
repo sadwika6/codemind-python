@@ -1,11 +1,10 @@
-a=int(input())
+n=int(input())
 s=0
-s1=0
-while a>0:
-    r=a%10
+while n>0:
+    r=n%10
     s+=r
-    a=a//10
-    if a==0 and s>9:
-        a=s
+    n=n//10
+    if n==0 and s>9:
+        n=s
         s=0
-print(s)        
+print(s)
