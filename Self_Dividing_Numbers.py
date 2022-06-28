@@ -1,16 +1,13 @@
 a=int(input())
 b=int(input())
 for i in range(a,b+1):
-    c=0
+    t=len(str(i))
+    n=i
     s=0
-    t=i
-    while t:
-        d=t%10
-        s+=1
-        t=t//10
-        if d==0:
-            break
-        elif i%d==0:
-            c+=1
-    if s==c:
+    while n:
+        r=n%10
+        n=n//10
+        if r!=0 and i%r==0:
+            s+=1
+    if s==t:
         print(i,end=' ')
