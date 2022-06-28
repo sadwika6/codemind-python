@@ -1,11 +1,7 @@
 n=int(input())
-i=1
-h=0
-while i<n:
+for i in range(n):
     if i*(i+1)==n:
-        h=1
-    i+=1
-if h==1:
-    print("YES")
+        print('YES')
+        break
 else:
-     print("NO")
+    print("NO")
