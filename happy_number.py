@@ -1,13 +1,13 @@
-num=int(input())
-sum=0
-while(sum!=1 and sum!=4):
-    sum=0
-    while num>0:
-        r=num%10
-        sum+=(r*r)
-        num=num//10
-    num=sum
-if sum==1:
+n=int(input())
+s=0
+while n:
+    r=n%10
+    s+=(r**2)
+    n=n//10
+    if n==0 and s>9:
+        n=s
+        s=0
+if s==1 or s==7:
     print("True")
 else:
     print("False")
