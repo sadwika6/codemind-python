@@ -1,10 +1,6 @@
 s=input()
 s=s.lower()
-c=''
-for i in s:
-    if s.count(i)==1 and i!=' ':
-        c+=i
-a=sorted(c)
+a=sorted(set(s))
 z=''
 z=z.join(a)
 z=z.replace(" ","")
