@@ -1,7 +1,7 @@
 s=input()
-c=0
 s=s.lower()
+c=0
 for i in s:
-    if i!=' ' and s.count(i)==1:
+    if s.count(i)==1 and i!=' ':
         c+=1
 print(c)
