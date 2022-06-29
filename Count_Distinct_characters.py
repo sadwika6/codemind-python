@@ -1,7 +1,8 @@
 s=input()
 s=s.lower()
-a=sorted(set(s))
-z=''
-z=z.join(a)
-z=z.replace(" ","")
-print(len(z))
+a=set(s)
+l=0
+for i in a:
+    if i==' ':
+        l+=1
+print(len(a)-l)
