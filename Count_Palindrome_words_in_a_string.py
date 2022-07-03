@@ -1,13 +1,8 @@
-def palindrome(n):
-    if n==n[::-1]:
-        return True
-    else:
-        return False
 s=input()
-l=s.split()
+s=s.lower()
+s=s.split()
 c=0
-for i in l:
-    i=i.lower()
-    if palindrome(i):
+for i in s:
+    if i==i[::-1]:
         c+=1
 print(c)
