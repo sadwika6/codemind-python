@@ -1,7 +1,7 @@
 n=int(input())
-a=list(map(int,input().split()))
+l=list(map(int,input().split()))
 if n%2==0:
-    print(*a)
+    print(*l)
 else:
-    a.append(0)
-    print(*a)
+    l.append(0)
+    print(*l)
