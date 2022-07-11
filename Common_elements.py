@@ -1,12 +1,8 @@
-n,m=map(int,input().split())
+m,n=map(int,input().split())
 l1=list(map(int,input().split()))
 l2=list(map(int,input().split()))
 k=[]
 for i in l1:
-    if i in l2:
+    if i in l2 and i not in k:
         k.append(i)
-m=[]
-for i in k:
-    if i not in m:
-        m.append(i)
-print(*m)
+print(*k)
