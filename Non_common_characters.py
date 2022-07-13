@@ -1,15 +1,12 @@
 s1=input()
-s1=s1.lower()
 s2=input()
+s1=s1.lower()
 s2=s2.lower()
-l=' '
+k=[]
 for i in s1:
-    if i not in s2 and i not in l:
-        l+=i
+    if i not in s2 and i not in k and i!=' ':
+        k.append(i)
 for i in s2:
-    if i not in s1 and i not in l:
-        l+=i
-if l=='':
-    print(-1)
-else:
-    print(len(l)-1)
+    if i not in s1 and i not in k and i!=' ':
+        k.append(i)
+print(len(k))
