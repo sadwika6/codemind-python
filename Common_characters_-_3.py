@@ -12,9 +12,8 @@ for i in s:
             else:
                 y=0
                 break
-        if y==1 and j not in k:
+        if y==1:
             k.append(j)
-            
     break
 if len(k)>0:
     k.sort()
