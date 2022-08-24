@@ -1,13 +1,11 @@
 n=int(input())
 l=list(map(int,input().split()))
 a,b=map(int,input().split())
-s=[]
-f=0
+k=[]
 for i in l:
-    if i>=a and i<=b:
-        s.append(i)
-        f=1
-if f==1:
-    print(max(s))
-else:
+    if(i>=a and i<=b):
+        k.append(i)
+if k==[]:
     print(-1)
+else:
+    print(max(k))
