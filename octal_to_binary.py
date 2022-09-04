@@ -1,0 +1,11 @@
+n=int(input())
+i=0
+s=0
+while(n):
+    r=n%10
+    s+=r*pow(8,i)
+    n=n//10
+    i+=1
+a=bin(s)
+a=a[2:]
+print(a)
