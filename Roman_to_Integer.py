@@ -1,27 +1,12 @@
-def value(i):
-    if i=='I':
-        return 1
-    elif i=='V':
-        return 5
-    elif i=='X':
-        return 10
-    elif i=='L':
-        return 50
-    elif i=='C':
-        return 100
-    elif i=='D':
-        return 500
-    elif i=='M':
-        return 1000
-    else:
-        return 0
-n=input()
-s=0
+value={'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
+s=input()
+s=s[::-1]
+res=0
 x=0
-for i in range(len(n)-1,-1,-1):
-    if value(n[i])>=x:
-        s+=value(n[i])
+for i in s:
+    if value[i]<x:
+        res-=value[i]
     else:
-        s-=value(n[i])
-    x=value(n[i])
-print(s)
+        res+=value[i]
+    x=value[i]
+print(res)
